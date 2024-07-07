@@ -8,24 +8,54 @@
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .media-section {
             margin-bottom: 40px;
         }
         .media-section h2 {
             margin-bottom: 20px;
+            font-size: 24px;
+            color: #0056b3;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 10px;
         }
-        .media-section img, .media-section video {
+        .media-section img {
             display: block;
             max-width: 100%;
+            height: auto;
             margin-bottom: 20px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            transition: transform 0.2s;
+        }
+        .media-section img:hover {
+            transform: scale(1.05);
+        }
+        .media-section iframe {
+            display: block;
+            width: 100%;
+            max-width: 640px;
+            height: 360px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
 
-    <div class="media-section">
-        <h2>Pictures</h2>
+    <div class="container">
+        <div class="media-section">
+            <h2>Pictures</h2>
             <img src="https://i.imgur.com/a6BFFq0.jpeg" alt="Picture 1">
             <img src="https://i.imgur.com/cLHPwAq.jpeg" alt="Picture 2">
             <img src="https://i.imgur.com/pQYL40i.jpeg" alt="Picture 3">
@@ -38,19 +68,19 @@
             <img src="https://i.imgur.com/34itXBy.jpeg" alt="Picture 10">
             <img src="https://i.imgur.com/B7VA778.jpeg" alt="Picture 11">
             <img src="https://i.imgur.com/IA2S6Nr.jpeg" alt="Picture 12">
-    </div>
+        </div>
 
-    <iframe title="vimeo-player" src="https://player.vimeo.com/video/979847205?h=fde041c1f7" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
-    <iframe title="vimeo-player" src="https://player.vimeo.com/video/979851464?h=03d0e2a6f4" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
-    <iframe title="vimeo-player" src="https://player.vimeo.com/video/979851546?h=47a48aa062" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
-    <iframe title="vimeo-player" src="https://player.vimeo.com/video/979851630?h=6a2738c1d5" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
-    <iframe title="vimeo-player" src="https://player.vimeo.com/video/979851712?h=a45b8d454f" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
-    <iframe title="vimeo-player" src="https://player.vimeo.com/video/979851849?h=176e2072a3" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
-    <iframe title="vimeo-player" src="https://player.vimeo.com/video/979852079?h=627294f869" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
-    <iframe title="vimeo-player" src="https://player.vimeo.com/video/979852475?h=ad72fda9b5" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
-    
-    <div class="media-section">
-        <h2>Videos</h2>
+        <div class="media-section">
+            <h2>Videos</h2>
+            <iframe title="vimeo-player" src="https://player.vimeo.com/video/979847205?h=fde041c1f7" allowfullscreen></iframe>
+            <iframe title="vimeo-player" src="https://player.vimeo.com/video/979851464?h=03d0e2a6f4" allowfullscreen></iframe>
+            <iframe title="vimeo-player" src="https://player.vimeo.com/video/979851546?h=47a48aa062" allowfullscreen></iframe>
+            <iframe title="vimeo-player" src="https://player.vimeo.com/video/979851630?h=6a2738c1d5" allowfullscreen></iframe>
+            <iframe title="vimeo-player" src="https://player.vimeo.com/video/979851712?h=a45b8d454f" allowfullscreen></iframe>
+            <iframe title="vimeo-player" src="https://player.vimeo.com/video/979851849?h=176e2072a3" allowfullscreen></iframe>
+            <iframe title="vimeo-player" src="https://player.vimeo.com/video/979852079?h=627294f869" allowfullscreen></iframe>
+            <iframe title="vimeo-player" src="https://player.vimeo.com/video/979852475?h=ad72fda9b5" allowfullscreen></iframe>
+        </div>
     </div>
 
 </body>
